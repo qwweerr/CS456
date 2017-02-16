@@ -1,0 +1,15 @@
+CS 456 - Assignment #1 README
+
+About:
+The files: client.java and server.java are Java scripts written to fulfill the requirements outlined in Assignment #1
+
+Compilation $ Execution:
+To start the server, run: ./server.sh <req_code>
+To start the client, run: ./client.sh <server_address> <n_port> <req_code> <msg>
+
+Parameters:
+<server_address>  The name/IP of the machine that the server is running on.
+<n_port> 	  The negotiate port printed out by the sever on startup
+<req_code>    Request code needs to be checked in the server. If the client does not send the exact request code, then the 
+              servershould close the connection to that client (in the negotiation port) and will not create the UDP port.
+<msg> 		  A string to be reversed by the server
